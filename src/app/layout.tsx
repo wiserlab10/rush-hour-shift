@@ -11,7 +11,7 @@ const sans = Noto_Sans_KR({
 
 export const metadata: Metadata = {
   title: "러시아워 쉬프트",
-  description: "골드 vs 실버, 카드를 내고 주차 판을 밀어 먼저 빼져나기",
+  description: "골드 vs 실버, 카드를 내고 주차 판을 밀어 먼저 빠져나가기",
   applicationName: "러시아워 쉬프트",
 };
 
