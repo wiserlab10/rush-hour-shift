@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-sans), "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+  --color-background: #070b14;
+  --color-foreground: #f8fafc;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(251, 191, 36, 0.16), transparent 55%),
+    radial-gradient(900px 500px at 100% 100%, rgba(56, 189, 248, 0.12), transparent 50%),
+    #070b14;
+  color: #f8fafc;
+}
+
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
