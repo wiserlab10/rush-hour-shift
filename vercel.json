@@ -1,1 +1,3 @@
-__LOAD_FROM__/workspace/vercel.json
+{
+  "framework": "nextjs"
+}
