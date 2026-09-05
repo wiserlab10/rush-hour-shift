@@ -52,6 +52,6 @@ export function cardTitle(card: Card): string {
 export function cardHint(card: Card): string {
   if (card.kind === "move") return `차 ${card.moves}칸 (나눠 써도 됨)`;
   if (card.kind === "slide") return "한 대 · 막히기 전 아무 칸";
-  if (card.kind === "shift") return "끝 판을 여러 줄 (맞닿음 유지)";
+  if (card.kind === "shift") return "끝 판을 여러 줄 (맞춤음 유지)";
   return `차·판 합쳐 ${card.moves}칸`;
 }
