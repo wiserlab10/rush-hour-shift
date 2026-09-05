@@ -12,7 +12,7 @@ export default function RulesPage() {
         </Link>
       </div>
       <div className="space-y-3 text-sm leading-relaxed text-white/75">
-        <p>보드를 가로로 이어 붙인 세 판(5+4+5). 가운데는 고정, 왼쪽/오른쪽만 위아래로 밀 수 있어.</p>
+        <p>보드를 가로로 이어 붙은 세 판(5+4+5). 가운데는 고정, 왼쪽/오른쪽만 위아래로 밀 수 있어.</p>
         <p>턴마다 패 4장 중 1장을 내고, 더미에서 1장을 뽑아.</p>
         <p>
           <b className="text-white">숫자</b> — 그 칸수만큼 차를 밀어. 여러 대에 나눠도 됨. 상대 히어로는 금지.
