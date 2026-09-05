@@ -13,7 +13,17 @@ export async function GET(req: Request) {
     getSetup(setupId);
     const { room, player } = await createRoom(setupId, name);
     const dest = `/r/${room.code}?p=${encodeURIComponent(player.id)}`;
-    const html = `<!doctype html>\n<html lang="ko"><head>\n<meta charset="utf-8"/>\n<meta http-equiv="refresh" content="0;url=${dest}"/>\n<title>방 만드는 중</title>\n</head>\n<body style="background:#070b14;color:#fff;font-family:sans-serif;padding:24px">\n<p>방 만들었어. 바로 들어갈게…</p>\n<p><a href="${dest}" style="color:#fbbf24">안 열리면 여기</a></p>\n<script>location.replace(${JSON.stringify(dest)});</script>\n</body></html>`;
+    const html = `<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta http-equiv="refresh" content="0;url=${dest}"/>
+<title>방 만드는 중</title>
+</head>
+<body style="background:#070b14;color:#fff;font-family:sans-serif;padding:24px">
+<p>방 만들었어. 바로 들어갈게…</p>
+<p><a href="${dest}" style="color:#fbbf24">안 열리면 여기</a></p>
+<script>location.replace(${JSON.stringify(dest)});</script>
+</body></html>`;
     const res = new NextResponse(html, {
       status: 200,
       headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" },
