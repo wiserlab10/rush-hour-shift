@@ -1,3 +1,5 @@
+"use client";
+
 import { vehicleCells } from "@/lib/game/board";
 import type { SetupDef } from "@/lib/game/types";
 
