@@ -1,5 +1,1 @@
-import { HomeScreen } from "@/components/game/HomeScreen";
-
-export default function Page() {
-  return <HomeScreen />;
-}
+__LOAD_FROM__/workspace/src/app/page.tsx
